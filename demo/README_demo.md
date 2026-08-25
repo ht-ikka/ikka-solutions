@@ -46,11 +46,15 @@ The demo focuses on customer-specific requirement questions and shows how IKKA g
 
 ---
 
-### 5. Upcoming — Controlled LLM Synthesis
+### 5. IKKA GPT — Controlled LLM Synthesis
 
-A future demo will show controlled LLM synthesis once LLM capability is fully configured.
+A Custom GPT use-case demo showing IKKA with Onyx-backed retrieval and controlled LLM synthesis enabled.
 
-This demo will focus on how IKKA synthesizes across retrieved evidence while preserving governance constraints such as source grounding, citation integrity, traceable response paths, refusal behavior, and fallback logic.
+The demo uses real manufacturing and quality scenarios to show how IKKA can resolve structured enterprise context deterministically, retrieve authoritative requirements when needed, synthesize across relevant evidence, and withhold conclusions when the required source-of-truth evidence is unavailable.
+
+Representative workflows include program handoff, production abnormalities, customer complaints, launch-readiness review, and governed evidence refusal.
+
+[Watch IKKA GPT Controlled LLM Synthesis](https://drive.google.com/file/d/1LbtMUP5tDywzR0YwuZDye-7Fuqnz3TEb/view?usp=sharing)
 
 ---
 
@@ -62,35 +66,43 @@ The current public demo set includes:
 * Terminal-based system overview
 * Local Evidence Retrieval / Custom GPT use-case demo
 * RAG Retrieval / Onyx-backed retrieval demo
+* Controlled LLM Synthesis / Onyx-backed retrieval and synthesis demo
 
-The current demos cover two retrieval modes:
+Across the demos, IKKA demonstrates:
 
+* Deterministic resolution from structured enterprise context
 * Local evidence-pack retrieval
-* Onyx-backed RAG retrieval
+* Onyx-backed retrieval from standards and customer requirements
+* Controlled LLM synthesis over retrieved evidence
+* Clarification and governed refusal behavior
+* Explicit disclosure when available evidence does not support a conclusion
+* Traceable execution paths, sources, confidence, and risk
 
-The next planned demo is Controlled LLM Synthesis.
+The broader workflow demonstrated is:
+
+**Know the organization → find the governing evidence → synthesize what matters → refuse what cannot be supported.**
 
 ## Demo KPI Snapshot
 
-Current demo traces across Local Evidence Retrieval and Onyx RAG Retrieval:
+Current results across the public demos:
 
-- **Questions tested:** 14
-- **Evidence Pack questions:** 10
-- **Onyx RAG questions:** 4
-- **Retrieval modes demonstrated:** Local evidence pack + Onyx-backed RAG
-- **Out-of-domain guardrail shown:** Chocolate cake prompt rejected as outside IKKA’s governed manufacturing scope
-- **Evidence-backed responses shown:** Local evidence retrieval + GM CSR retrieval
-- **Local evidence files cited:** 5
-- **Local evidence formats represented:** JSON, CSV, Markdown
-- **Inspection records surfaced:** 135
-- **GM CSR source chunks cited through Onyx:** 3
-- **Onyx RAG success rate:** 4 / 4
-- **Average Onyx RAG confidence:** 0.965
-- **Average Onyx RAG response time:** 1.13 seconds
-- **Average Onyx retrieval-backed response time:** 1.50 seconds
+- **Public demo baseline questions:** 14 across Local Evidence Retrieval and Onyx RAG Retrieval
+- **Evidence modes demonstrated:** Structured enterprise context, local evidence-pack retrieval, and Onyx-backed source-of-truth retrieval
+- **Controlled LLM synthesis:** Live and successfully demonstrated with Onyx-backed retrieval
+- **Selective LLM use:** Deterministic enterprise-context queries can resolve without invoking LLM synthesis
+- **Historical Onyx RAG success rate:** 4 / 4
+- **Representative controlled-synthesis confidence:** 0.98–1.00
+- **Average historical Onyx RAG confidence:** 0.965
+- **Average historical Onyx RAG response time:** 1.13 seconds
 - **Average local evidence-backed confidence:** 1.00
 - **Average local evidence-backed retrieval time:** 58.5 ms
-- **Gate paths demonstrated:** Deterministic resolution, clarification, governed refusal, Gate B retrieval, Gate B / Gate C synthesis
-- **Governance behaviors shown:** Out-of-domain rejection, clarification, no-evidence refusal, capability-metric withholding, compliance-certification refusal, missing-evidence disclosure
-- **Work compressed:** Project context lookup, inspection review, product specification lookup, statistical summary review, launch readiness review, CSR evidence lookup, and first-pass decision framing
-- **Current maturity:** MVP / pilot-development demo, not an audited production benchmark
+- **Inspection records surfaced:** 135
+- **Local evidence formats represented:** JSON, CSV, Markdown
+- **Enterprise evidence demonstrated:** Project context, inspection records, product specifications, launch evidence, APQP guidance, IATF-related requirements, and OEM customer-specific requirements
+- **Gate behaviors demonstrated:** Deterministic resolution, clarification, governed refusal, evidence retrieval, and controlled evidence synthesis
+- **Governance behaviors demonstrated:** Out-of-domain rejection, clarification, no-evidence refusal, compliance-certification refusal, missing-evidence disclosure, and authoritative-source withholding
+- **Governed evidence boundary:** IKKA withheld Toyota-specific requirements when no authoritative Toyota CSR was available in the connected evidence rather than substituting another OEM requirement
+- **Work compressed:** Program context lookup, inspection review, statistical review, launch readiness, customer-requirement retrieval, manufacturing-event response, cross-requirement synthesis, and first-pass decision framing
+- **Current maturity:** MVP / pilot-development demo; results are functional demonstrations rather than audited production benchmarks
+- **Onyx model / provider:** Claude Sonnet 4.6 via Anthropic
+- **Latest controlled-synthesis test-day spend:** Approximately $0.89 while exercising multiple governed retrieval and synthesis scenarios across Program Management, Quality, Process Engineering, and Operations use cases
