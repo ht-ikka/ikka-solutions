@@ -1,108 +1,99 @@
-# IKKA Manufacturing Intelligence
+# IKKA Solutions
 
-IKKA is a governed decision infrastructure layer for engineering and manufacturing organizations.
+### Make Knowledge Work.
 
-It helps organizations turn fragmented documents, systems, standards, customer requirements, inspection records, and institutional knowledge into structured decision support.
+Organizations have spent decades building institutional knowledge through people, processes, technology, and experience.
 
-IKKA is built for environments where unsupported answers create downstream risk.
+Yet much of that intelligence remains fragmented, underutilized, or dependent on the individuals who carry it.
 
----
+Artificial intelligence is making it easier than ever to generate information. But more information doesn't automatically translate into better decisions or execution.
 
-## The Problems IKKA Is Built Around
-
-Teams are not short on information. They are short on governed ways to use it.
-
-IKKA is focused on persistent problems that are becoming more urgent as organizations adopt AI:
-
-* **Brain drain and knowledge loss**
-  Critical working knowledge often lives in experienced people, scattered files, and undocumented decision history.
-
-* **Decision lag**
-  Teams lose time reconstructing context across documents, systems, standards, customer requirements, inspection records, and tribal memory.
-
-* **Latent enterprise IP**
-  Companies already have valuable knowledge inside their own records, but much of it is difficult to find, reuse, or trust at the moment of decision.
-
-* **Single source of truth failure**
-  Engineering, quality, manufacturing, supplier, and customer-facing teams often work from fragmented or inconsistent information.
-
-* **AI last-mile risk**
-  Generic AI can generate answers, but regulated teams still need evidence, citations, boundaries, escalation, and accountability.
-
-* **AI calibration at scale**
-  As AI use grows across the workplace, organizations need systems that know when to answer, when to retrieve evidence, when to ask for clarification, and when not to answer.
+**IKKA is building enterprise intelligence infrastructure to turn institutional knowledge into operational capability.**
 
 ---
 
-## What IKKA Does
+## The Problem
 
-IKKA sits between enterprise knowledge sources and AI-assisted workflows.
+Modern enterprises don't suffer from a lack of information. They struggle to put it to work consistently.
 
-Instead of treating every user query as something that should immediately receive an AI-generated answer, IKKA evaluates how the question should be handled:
+- **Knowledge fragmentation:** Critical context is distributed across systems, documents, departments, and people.
+- **Institutional memory loss:** Expertise, lessons learned, and decision history become difficult to recover or reuse.
+- **Execution friction:** Teams repeatedly search, validate, reconcile, and reconstruct information before acting.
+- **AI-generated complexity:** Faster content creation introduces additional work in verification, integration, and accountability.
+- **Operational risk:** Unsupported or inconsistent decisions can produce material consequences for quality, cost, safety, and compliance.
 
-* Can this be answered from known internal context?
-* Does it require evidence from approved sources?
-* Is controlled AI synthesis appropriate?
-* Is there enough context to answer safely?
-* Should the system clarify, refuse, or escalate?
+These challenges are especially visible in industrial environments—but they are not unique to manufacturing.
 
-The goal is not to make AI more conversational.
-The goal is to make enterprise decision support more governed.
+## Our Approach
+
+IKKA is developing a composable software platform that connects enterprise knowledge, organizational context, and AI-assisted workflows.
+
+Rather than treating every question as a prompt for generative AI, IKKA determines the appropriate method of resolution.
+
+Its technical approach combines:
+
+**1. Deterministic Context**  
+Apply established organizational facts, roles, responsibilities, and decision rules.
+
+**2. Evidence Retrieval**  
+Retrieve relevant information from approved enterprise documents, standards, and knowledge repositories.
+
+**3. Selective AI Synthesis**  
+Use language models where interpretation and synthesis add value, with evidence and defined boundaries.
+
+**4. Decision Traceability**  
+Preserve the basis of a response, including its supporting context, sources, and resolution path.
+
+**5. Enterprise Interoperability**  
+Develop modular integrations through APIs and replaceable components, supporting a scalable SaaS architecture.
+
+The intent is not to replace enterprise systems or introduce another disconnected AI workspace.
+
+It is to make existing knowledge and infrastructure more useful in the decisions and workflows that matter.
+
+## Where We Start
+
+IKKA's initial focus is **engineering and regulated manufacturing**, where operational knowledge directly influences quality, productivity, cost, and risk.
+
+Application areas under exploration include:
+
+- New Product Introduction (NPI), APQP, and PPAP
+- Quality management and manufacturing process engineering
+- Customer-specific requirements and industry standards
+- Root cause analysis and corrective action workflows
+- Cross-functional knowledge continuity and decision support
+
+These environments provide a practical foundation for developing capabilities applicable to complex enterprises across industries.
+
+## Explore the Project
+
+**[Product Thesis & Use Cases](docs/product-thesis-and-use-cases.md)**  
+The industrial challenges, commercial opportunity, and workflows motivating IKKA's development.
+
+**[How IKKA Works](docs/how-ikka-works.md)**  
+Architecture, decision-routing principles, evidence retrieval, AI synthesis, and technical boundaries.
+
+**[Demo Materials](demo/README_demo.md)**  
+Selected demonstrations illustrating the current system's capabilities.
+
+**[Founder Background](founder_CV/CV_Harshal_Tarar_IKKA.pdf)**  
+Industrial engineering, manufacturing, product development, and quality systems experience informing IKKA's approach.
+
+## Development & Collaboration
+
+IKKA is in the MVP and pilot-validation stage, with ongoing work in technical hardening, applied research, and enterprise workflow discovery.
+
+We welcome conversations with industrial operators, engineering leaders, technology partners, researchers, and investors interested in making enterprise knowledge more effective.
+
+This repository contains public product and architecture materials. Proprietary implementation details, customer-specific data, credentials, and internal configurations are excluded.
+
+## Connect
+
+**IKKA Solutions**  
+Website: https://ikkasolutions.com  
+Email: harshal@ikkasolutions.com  
+Founder: [Harshal Tarar](https://www.linkedin.com/in/harshaltarar)
 
 ---
 
-## Public Materials
-
-### Product Thesis and Use Cases
-
-An overview of the manufacturing problem IKKA is built around, why governed AI matters, and where IKKA can support regulated industrial workflows.
-
-[Read: Product Thesis and Use Cases](docs/product-thesis-and-use-cases.md)
-
-### How IKKA Works
-
-An architecture overview describing IKKA’s governed decision pipeline, evidence handling, controlled synthesis, traceability, and model-independent design.
-
-[Read: How IKKA Works](docs/how-ikka-works.md)
-
-### Demo Materials
-
-Founder's note and demo links showing IKKA operating through governed workflows.
-
-[View: Demo Materials](demo/README_demo.md)
-
-### Founder Background
-
-Founder CV for Harshal Tarar, including manufacturing, NPD, APQP/PPAP, quality systems, and regulated engineering execution experience.
-
-[View: Founder CV](founder_CV/CV_Harshal_Tarar_IKKA.pdf)
-
----
-
-## Current Status
-
-IKKA is currently in MVP / pilot-development stage.
-
-Current focus areas:
-
-* pilot validation
-* technical hardening
-* venture partner discovery
-* co-founder search
-
-Sensitive implementation details, internal protocols, connectors, prompts, and customer-specific data are intentionally excluded from this public repository.
-
----
-
-## Contact
-
-Harshal Tarar
-Founder, IKKA Solutions
-[harshal@ikkasolutions.com](mailto:harshal@ikkasolutions.com)
-
-Website: https://ikkasolutions.com
-LinkedIn: https://www.linkedin.com/in/harshaltarar
-
----
-
-IKKA is governed decision infrastructure for manufacturing intelligence.
+**Make Knowledge Work.**
